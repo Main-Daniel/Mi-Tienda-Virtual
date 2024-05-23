@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Proveedores - Tienda Virtual</title>
+    <link rel="stylesheet" href="CSS/Registro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Tienda Virtual</h1>
+      <nav>
+        <ul>
+          <li><a href="ConsultarUsuarios.html">Consultar Usuarios</a></li>
+          <li><a href="RegistroUsuarios.html">Registro de Usuarios</a></li>
+          <li><a href="ConsultarClientes.html">Consultar Clientes</a></li>
+          <li><a href="RegistrarClientes.html">Registrar Clientes</a></li>
+          <li><a href="ConsultarProveedores.html">Consultar Proveedores</a></li>
+          <li><a href="RegistroProveedores.html">Registrar Proveedores</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-section">
+        <h2>Registro Proveedores</h2>
+        <p>Ingrese los datos del proveedor:</p>
+        <table>
+          <tr>
+            <td><label for="txtNIT">NIT:</label></td>
+            <td><input type="text" id="txtNIT" name="NIT" /></td>
+          </tr>
+          <tr>
+            <td><label for="txtCiudad">Ciudad:</label></td>
+            <td><input type="text" id="txtCiudad" name="ciudad" /></td>
+          </tr>
+          <tr>
+            <td><label for="txtDireccion">Dirección:</label></td>
+            <td><input type="text" id="txtDireccion" name="direccion" /></td>
+          </tr>
+          <tr>
+            <td><label for="txtNombre">Nombre:</label></td>
+            <td><input type="text" id="txtNombre" name="nombre" /></td>
+          </tr>
+          <tr>
+            <td><label for="txtTelefono">Teléfono:</label></td>
+            <td><input type="text" id="txtTelefono" name="telefono" /></td>
+          </tr>
+          <tr>
+            <td><button onclick="sendData()">Enviar Datos</button></td>
+            <td>
+              <input
+                type="reset"
+                name="borrar"
+                id="borrar"
+                value="Restablecer"
+              />
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <script src="JS/RegistroProveedores.js"></script>
+  </body>
+</html>

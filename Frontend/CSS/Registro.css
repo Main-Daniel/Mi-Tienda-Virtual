@@ -1,0 +1,112 @@
+:root {
+    --negro: #000000;
+    --Paleta1: #012a4a;
+    --Paleta2: #013a63;
+    --Paleta3: #01497c;
+    --Paleta4: #014f86;
+    --Paleta5: #2a6f97;
+    --Paleta6: #2c7da0;
+    --Paleta7: #468faf;
+    --Paleta8: #61a5c2;
+    --Paleta9: #89c2d9;
+    --Paleta10: #a9d6e5;
+    --blancoS: #e8f1f2;
+    --blanco: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+    background-color: var(--Paleta9);
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centrar contenido verticalmente */
+  }
+  
+  .title {
+    font-size: 80px;
+    margin: 0;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--Paleta1);
+    color: var(--blanco);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 18px 0px;
+    text-align: center;
+    background-color: var(--Paleta2);
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--Paleta4);
+    color: var(--blanco);
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--Paleta6);
+    color: var(--negro);
+  }
+  
+  table {
+    margin-top: 20px;
+  }
+  
+  table tr td {
+    padding: 5px;
+  }
+  
+  input[type="text"], input[type="email"], button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--blanco); /* Color del borde de los input y botón */
+  }
+  
+  button, input[type="reset"] {
+    background-color: var(--Paleta1);
+    color: var(--blanco);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--Paleta3); /* Color al pasar el mouse sobre el botón */
+  }
+  
+  #dvResult {
+    margin-top: 20px;
+  }
+  
+  .form-section h2 {
+    font-size: 24px;
+    color: var(--Paleta1);
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: var(--blancoS);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px var(--negro);
+  }
+  
